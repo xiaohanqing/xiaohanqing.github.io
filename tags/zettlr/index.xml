@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zettlr on hugo-blog</title>
+    <link>http://localhost:1313/tags/zettlr/</link>
+    <description>Recent content in zettlr on hugo-blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 03 Aug 2022 10:48:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/zettlr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown语法记录</title>
+      <link>http://localhost:1313/post/zettlr/</link>
+      <pubDate>Wed, 03 Aug 2022 10:48:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/zettlr/</guid>
+      <description>留一个记录，自己方便使用，并且可以制作成图片作为背景~ 下面就开始了 Tips：建议所有符号后面都加个空格再开始正文 参考网站:https://w</description>
+    </item>
+    
+  </channel>
+</rss>
