@@ -1,110 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Not Found</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // https://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
 
-<head>
-  <title>404 Page not found | hugo-blog</title>
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
+      // Otherwise, leave segmentCount as 0.
+      var segmentCount = 0;
 
-  <meta charset="UTF-8">
-  <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
 
-  
-  
-
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-
-
-  
-  
-    
- 
-  
-  
-  
-  
-  
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/404.min.2b1ffedfa1cd39e26610d196bbb8604dde61be38e0eb9245f86e40a758e86697.css" integrity="sha256-Kx/&#43;36HNOeJmENGWu7hgTd5hvjjg65JF&#43;G5Ap1joZpc="/>
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
-  
-  
-   
-   
-    
-
-<script type="application/ld+json">
-  
-    { 
-      "@context": "http://schema.org", 
-      "@type": "WebSite", 
-      "url": "http:\/\/localhost:1313\/404.html",
-      "name": "404 Page not found",
-      "author": {
-        "@type": "Person",
-        "name": ""
-      },
-      "description": ""
-    }
-  
-  </script>
-</head>
-
-<body>
-  <div class="burger__container">
-  <div class="burger" aria-controls="navigation" aria-label="Menu">
-    <div class="burger__meat burger__meat--1"></div>
-    <div class="burger__meat burger__meat--2"></div>
-    <div class="burger__meat burger__meat--3"></div>
-  </div>
-</div>
- 
-
-  <nav class="nav" id="navigation">
-  <ul class="nav__list">
-    
-    
-      <li>
-        <a  href="/">Home</a>
-      </li>
-    
-      <li>
-        <a  href="/post/">Archives</a>
-      </li>
-    
-      <li>
-        <a  href="/tags/">Tags</a>
-      </li>
-    
-      <li>
-        <a  href="/categories/">Categories</a>
-      </li>
-    
-  </ul>
-</nav>
-
-
-  <main>
-    
-<article>
-  <h1>
-    This is not the page you were looking for
-  </h1>
-</article>
-
-  </main>
-
-   
-
-  
-  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
-   
-</body>
-
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
